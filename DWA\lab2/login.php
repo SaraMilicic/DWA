@@ -2,8 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2.css">
+	<?php
+		session_start();
+		$_SESSION['username']  = 'admin';
+		$_SESSION['password'] = 'admin';
+	?>
 </head>
 
 <body>
@@ -11,20 +16,23 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-xs-12">
-				<img src="vjezba2/fantBeastsLogo.png" style="width:100%;">
+				<a href="login.html"><img src="fantBeastsLogo.png" style="width:100%;"></a>
 			</div>
 
 			<div class="col-md-9 col-xs-12 logout">
-				<form>
+				<form method="post" action="login.html">
 				<?php
-					echo "Korisničko ime : ";
-					if($_GET["username"] === "") echo "a is an empty string\n";
-					echo $_GET['username'];
-					echo"<br><br>";
-					echo "Lozinka : ";
-					if($_GET["password"] === "") echo "a is an empty string\n";
-					echo $_GET['password'];
-					echo"<br><br>";
+
+					if($_SESSION["username"]==$_POST["username"] && $_SESSION["password"]==$_POST["password"]){
+						echo "Korisnik:".$_POST["username"]."</br>";
+						echo "Lozinka:".$_POST["password"]."";
+					}
+					
+					else {
+						header("location:login.html");
+						echo "Nemate admin prava";
+					}
+					
 
 				?>
 				<input type="submit" value="Odjava">
@@ -38,24 +46,39 @@
 			<div class="col-md-3 col-xs-12 box">
 
 				<nav class="main-nav">
+					
 					<ul>
-						<li><a href="#">Izbornik</a></li>
-						<li><a href="#">Opcija 2</a></li>
-						<li><a href="#">Opcija 3</a></li>
-						<li><a href="#">Opcija 4</a></li>
-						<li><a href="#">Opcija 5</a></li>
+						<p>Izbornik</p>
+						<li><a href="#osnovno">Osobni podaci</a></li>
+						<li><a href="#skolovanje">Podaci o školovanju</a></li>
+						<li><a href="#znanje">Znanja i vještine</a></li>
+						<li><a href="#iskustvo">Radno iskustvo</a></li>
 					</ul>
 				</nav>
 			</div>
 
-			<div class="col-md-9 col-xs-12 box content">
+			<div class="col-md-9 col-xs-12">
+				
 				<h3>Životopis</h3>
-				<h4>Osobni podaci</h4>
-				<p>Ime i prezima: Sara Miličić<br>Mjesto rođenja: Zagreb<br>Datum rođenja: 18.05.1994.</p>
-				<h4>Podaci o školovanju</h4>
+				<h4><a name="osnovno">Osobni podaci</a></h4>
+				<p class="text1">Ime i prezima: Sara Miličić<br>Mjesto rođenja: Zagreb<br>Datum rođenja: 18.05.1994.<br><br>
+				
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel egestas mauris. Morbi quis massa id velit laoreet molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec quis massa quis odio suscipit rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent quis volutpat ante. Mauris elementum sed lectus nec tincidunt. Morbi sed imperdiet nulla. Aliquam luctus semper tempus. Vestibulum et leo sit amet sem viverra bibendum aliquam ut felis.
+
+				Suspendisse placerat accumsan posuere. Aliquam sed magna vitae tortor semper dignissim. Sed et ante tincidunt, luctus magna non, porttitor est. In est diam, tempor quis suscipit et, suscipit in tortor. Nulla eu rhoncus mauris. Duis quis leo est. Integer in ex in nibh pharetra pulvinar. Donec eu faucibus nibh. Vivamus semper, eros vel sollicitudin sodales, libero ex pellentesque purus, in luctus dui metus id lectus. Proin dolor arcu, pulvinar in nisi eu, feugiat mattis neque. Pellentesque ut est mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque sed orci eget felis tempor tristique at in tortor.
+
+				Aenean aliquam, risus ac porta mollis, nulla massa luctus ligula, vel euismod lacus eros quis ante. Etiam accumsan nibh ut scelerisque tempor. Integer tincidunt convallis lectus, eget dignissim sem tempor lobortis. Phasellus sit amet molestie nunc. Maecenas euismod felis non elit luctus, non ornare metus finibus. In aliquam magna lorem, vitae cursus odio vestibulum at. Quisque placerat, massa eget auctor semper, quam lorem imperdiet augue, non ultrices diam magna vitae ipsum. Integer blandit libero metus, nec volutpat erat rhoncus nec. Phasellus nunc diam, iaculis eu lacinia ut, mollis vitae justo.
+
+				Morbi eu ligula dignissim, gravida nibh vel, imperdiet elit. Donec in augue hendrerit, molestie lectus at, efficitur neque. Suspendisse potenti. Integer lobortis dictum accumsan. Nullam eget ligula orci. Sed pellentesque ligula id dui porttitor, et scelerisque risus gravida. Donec eu rutrum quam.
+
+				Sed dignissim, velit eu eleifend pulvinar, nisi arcu tristique tellus, ac finibus leo metus nec est. Aenean malesuada porttitor eros ac iaculis. Pellentesque finibus enim non neque porttitor, eu volutpat purus ullamcorper. Phasellus pharetra eros at nibh porttitor, vitae cursus lorem tincidunt. Aliquam a euismod magna. Donec maximus, felis et bibendum eleifend, turpis lectus ornare nulla, eget malesuada elit ligula ac quam. Duis tempus enim nec nisi dictum hendrerit. Praesent scelerisque ultricies bibendum. Ut at justo nec massa posuere tincidunt eu sed orci. Nullam sagittis nisi non metus condimentum dictum.
+				</p>
+				<h4><a name="skolovanje">Podaci o školovanju</a></h4>
 				<p>Osnovna škola: OŠ Dr.Ante Starčevića<br>Srednja škola: II.gimnazija Križanićeva<br>
 					Fakultet: Tehičko veleučilište u Zagrebu</p>
-				<h4>Znanja i vještine</h4><p>Java, Html, CSS, Php, Sql, MySql</p>
+				<h4><a name="znanje">Znanja i vještine</h4></a><p>Java, Html, CSS, Php, Sql, MySql</p>
+				<h4><a name="iskustvo">Radno iskustvo</h4></a><p>Webcamp Zagreb volonter</p>
 			</div>
 		</div>
 	</div>

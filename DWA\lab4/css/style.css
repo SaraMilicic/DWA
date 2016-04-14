@@ -1,0 +1,67 @@
+/*sve stranice*/
+.container-fluid .row{
+	margin-top: 5em;
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-bottom: 5em;
+
+}
+
+footer {
+	border-top: 1px solid black;
+}
+
+/*login.html*/
+.moto {
+	color:#2D882D;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+/*login.php*/
+.main-nav {
+	border:1px solid black;
+	margin-top: 20px;
+}
+.main-nav li{
+	list-style:none;
+
+}
+
+.main-nav a {
+	
+}
+
+.main-nav a:link {
+	color:black;
+}
+
+.main-nav a:hover {
+	color:#2D882D;
+}
+
+.logout {
+	float: right;
+	border-bottom: 1px solid black;
+
+}
+
+.logout form {
+	float: right;
+	text-align: right;
+}
+ p:hover, h1:hover, a:hover {
+    color: #2D882D;
+}
+
+.naziv {
+	border:1px solid black;
+	padding: 10px 10px 10px 10px;
+}
+
+
+.cijena {
+	border:1px solid black;
+	padding: 10px 10px 10px 10px;
+}

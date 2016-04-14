@@ -30,7 +30,15 @@ footer {
 }
 
 .main-nav a {
+	
+}
+
+.main-nav a:link {
 	color:black;
+}
+
+.main-nav a:hover {
+	color:#2D882D;
 }
 
 .logout {
@@ -42,5 +50,8 @@ footer {
 .logout form {
 	float: right;
 	text-align: right;
+}
+ p:hover, h1:hover, a:hover {
+    color: #2D882D;
 }
 
