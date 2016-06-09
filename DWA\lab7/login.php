@@ -68,58 +68,37 @@
       <div class="sadrzaj column column-8"> 
        
         <h2><a name="osobni">Osobni podaci</a></h2>
-        <p>Vedrana Šoljić</p>
-          <p> Braće Domany 6, Srednjaci, 10000 Zagreb (Hrvatska) </p>   
+        <p>Sara Miličić</p>
+          <p> Zagreb (Hrvatska) </p>   
 
-          <p> vedrana.soljic1@gmail.com  </p>
+          <p> sara.konjevic@gmail.com  </p>
 
-          <p> Datum rođenja 21/08/1994 </p>
+          <p> Datum rođenja 18.05.1994 </p>
           <p> Državljanstvo hrvatsko </p>
           <p> Mjesto rođenja: Zagreb, Hrvatska</p>
         </p>
         <br>
         <h2><a name="skola">Podaci o školovanju </a></h2>
         <p>
-          <b>23 srpnja 13–danas </b> Stručnik prvostupnik inženjer računarstva razina 6 EKO-a
+          </b> Stručnik prvostupnik inženjer računarstva razina 6 EKO-a
           Tehničko Veleučilište u Zagrebu, Zagreb (Hrvatska) </p>
       
       <p>
-      <b>6 rujna 09–15 lipnja 13 </b>  razina 4 EKO-a,
-        XI. gimnazija
-      Savska cesta 77, 10000 Zagreb (Hrvatska) 
+      
+        II. gimnazija
+      
 
         </p>
 
       <p>
-        <b>rujan 2001-lipanj 09 </b> OŠ Trnsko
+        OŠ Ante Starčevića
       </p>
 
         <br><br>
 
         <h2><a name="radno">Podaci o radnom iskustvu</a> </h2>
         <p>
-          <b>1 srpnja 13–15 rujna 13</b> Rad u skladištu
-          VM2
-        Rudeška 14, 10000 Zagreb (Hrvatska) 
-          - deklariranje proizvoda
-         </p>
-
-         <p>
-        <b>1 lipnja 14–danas </b>Statist
-          Hrvatska Radiotelevizija
-        Prisavlje 3, 10000 Zagreb (Hrvatska) 
-          - statiranje na raznim emisijama
-        </p>
-        <br><br>
-
-        <h2><a name="znanje">Znanje i vještine</a></h2>
-        <p>jezici: engleski jezik, njemački jezik</p>
-
-        <p>Sklona timskom radu, sposobnost prilagodbe, komunikativna
-        Stečene sposobnosti zahvaljujući glazbenoj školi, solfeggio-u te orkestru, također plesanju rock'n'roll-a u grupi</p>
-
-        <p>Vješto korištenje alata u MS Office-u – znanje stečeno u osnovnoj i srednjoj školi (Informatika), te na fakultetu na kolegiju “Primjena računala”
-          Programski jezici: C, C++, C#, Java, PHP, SQL, Javascript
+        	Webcamp Zagreb volonter
         </p>
       </div>
 
